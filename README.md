@@ -10,8 +10,7 @@
 
 ##
 '''md
-![screenshot](assets/images/screenshot.png)
-'''
+![screenshot](./Assets/images/screenshot.png)'''
 
 ## credits
 -assisted by a conglomerate effort of my peers
