@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: rgba(68,88,119,1);
+    --secondary:rgba(146,204,206,1);
+    --tertiary: rgba(49,52,61,1);
+    --dark: rgba(28,29,33,1);
+    --light: rgba(238,238,247,1);
+}
+
+.webpage-title {
+    padding: 10px, 10px, 0px, 75px;
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    font-size: 3rem;
+       
+}
+
+.nav-li {
+    display: flex;
+
+}
+
+li[data-nav-link] {
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    display: inline-block;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 5px;
+    border-bottom: 3px solid var(--secondary);
+    color: var(--secondary);
+    text-decoration: none;
+    color: var(--secondary);
+    z-index: 1;
+
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: var(--secondary);
+    z-index: -1;
+    transition: transform 0.8s;
+}
+
+a:hover {
+    color: var(--dark);
+
+}
+
+a:hover::after {
+    transform: scaleY(1);
+}
+
+header {
+    display:flex;
+    background-color: var(--tertiary);
+    padding: 10px 250px -1px 0px;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    text-align: right;
+    padding-right: 0px;
+    list-style-type: none;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 40px 260px 40px;
+    height: 200px;
+    background-image: url(./images/02-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.alternative-title {
+    background-color: #afeeee;
+    color: #292b2c;
+    padding: 0px 10px 0 10px;
+    margin-right: 40px;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.about-container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 40px;
+  }
+
+.about-flexbox {
+    display:block;
+    justify-content: space-between;
+    align-content:space-around;
+ /* align-items: center; */
+ /* min-height:50%; */
+    max-width: 100%;
+    padding: 20px;
+    margin:auto;
+}
+
+#about-me {
+    display: inline-block;
+    color: var(--primary);
+    border-bottom: none;
+  }
+
+#work {
+    display: inline-block;
+    color: var(--primary);
+    border-bottom: none;
+}
+
+aside {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 10px;
+    color: var(--primary);
+    border-right: 3px solid var(--primary);
+    max-width: 300px;
+  }
+
+  .section-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 5px;
+    column-gap: 10px;
+  }
+
+.work-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    min-width: 93.5%;
+    min-height: 200px;
+    margin: 10px 0px 10px;
+  
+} 
+
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+
+.img-border {
+    border:5px solid var(--secondary);
+
+}
+
+.img-label {
+    position: revert;
+    top: 420px;
+    background-color: var(--secondary);
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.img-1 {
+    position: relative;
+    width: 75%;
+    height: 400px;
+    background-size: 1355px;
+    background-image: url(./images/02-portfolio-4.jpg);
+    margin-bottom: 20px;
+}
+
+.img-2 {
+    position: relative;
+    height: 200px;
+    width: 50%;
+    background-size: 1850px;
+    background-image: url(./images/02-portfolio-1.jpg);
+    margin-bottom: 20px;
+}
+
+.img-3 {
+    position: relative;
+    /*min-width: 400px; */
+    height: 200px;
+    width: 50%;
+    background-size: 1225px;
+    background-image: url(./images/02-portfolio-3.jpg);
+    margin-bottom: 20px;
+}
+
+.img-4 {
+    position: relative;
+    /*min-width: 400px; */
+    height: 200px;
+    width: 50%;
+    background-size: 1225px;
+    background-image: url(./images/02-portfolio-2.jpg);
+    margin-bottom: 20px;
+}
+
+.img-5 {
+    position: relative;
+    /*min-width: 400px; */
+    height: 200px;
+    width: 50%;
+    background-size: 1225px;
+    background-image: url(./images/02-run-buddy.jpg);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 933px) {
+    
+}
