@@ -1,15 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 :root {
-    --primary: rgba(68,88,119,1);
-    --secondary:rgba(146,204,206,1);
-    --tertiary: rgba(49,52,61,1);
-    --dark: rgba(28,29,33,1);
-    --light: rgba(238,238,247,1);
+    --primary: rgba(68, 88, 119, 1);
+    --secondary: rgba(146, 204, 206, 1);
+    --tertiary: rgba(49, 52, 61, 1);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
 }
 
 .webpage-title {
@@ -17,7 +17,7 @@
     background-color: var(--secondary);
     color: var(--tertiary);
     font-size: 3rem;
-       
+
 }
 
 .nav-li {
@@ -30,7 +30,7 @@ li[data-nav-link] {
     margin: 10px;
 }
 
-a{
+a {
     display: inline-block;
     font-size: 1.3rem;
     position: relative;
@@ -67,7 +67,7 @@ a:hover::after {
 }
 
 header {
-    display:flex;
+    display: flex;
     background-color: var(--tertiary);
     padding: 10px 250px -1px 0px;
     justify-content: space-between;
@@ -105,8 +105,8 @@ ul {
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .about-container {
@@ -118,24 +118,24 @@ body {
     margin: 20px 0px 0px 0px;
     padding: 0px 20px 0px 20px;
     margin-bottom: 40px;
-  }
+}
 
 .about-flexbox {
-    display:block;
+    display: block;
     justify-content: space-between;
-    align-content:space-around;
- /* align-items: center; */
- /* min-height:50%; */
+    align-content: space-around;
+    /* align-items: center; */
+    /* min-height:50%; */
     max-width: 100%;
     padding: 20px;
-    margin:auto;
+    margin: auto;
 }
 
 #about-me {
     display: inline-block;
     color: var(--primary);
     border-bottom: none;
-  }
+}
 
 #work {
     display: inline-block;
@@ -151,15 +151,14 @@ aside {
     color: var(--primary);
     border-right: 3px solid var(--primary);
     max-width: 300px;
-  }
+}
 
-  .section-flex {
+.section-flex {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
     padding: 5px;
     column-gap: 10px;
-  }
+}
 
 .work-flexbox {
     display: flex;
@@ -169,27 +168,44 @@ aside {
 
 }
 
-section {
+/* section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-width: 93.5%;
     min-height: 200px;
     margin: 10px 0px 10px;
-  
-} 
 
+} */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
 
-figure {
+.main-image {
+    flex-basis: 100%;
+}
+
+.smaller-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+
+/* figure {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
-}
+} */
 
 
 .img-border {
-    border:5px solid var(--secondary);
+    border: 5px solid var(--secondary);
 
 }
 
@@ -197,25 +213,24 @@ figure {
     position: revert;
     top: 420px;
     background-color: var(--secondary);
-    font-size: 2rem;
-    padding: 1rem;
+    padding: 1px;
     text-align: center;
     z-index: 1;
 }
 
 .img-1 {
     position: relative;
-    width: 75%;
+    width: 100%;
     height: 400px;
-    background-size: 1355px;
-    background-image: url(./images/02-portfolio-4.jpg);
+    background-size: 1000px;
+    background-image: url(./images/nonplaceholder/screenshot.png);
     margin-bottom: 20px;
 }
 
 .img-2 {
     position: relative;
     height: 200px;
-    width: 50%;
+    width: 246px;
     background-size: 1850px;
     background-image: url(./images/02-portfolio-1.jpg);
     margin-bottom: 20px;
@@ -225,7 +240,7 @@ figure {
     position: relative;
     /*min-width: 400px; */
     height: 200px;
-    width: 50%;
+    width: 246px;
     background-size: 1225px;
     background-image: url(./images/02-portfolio-3.jpg);
     margin-bottom: 20px;
@@ -235,7 +250,7 @@ figure {
     position: relative;
     /*min-width: 400px; */
     height: 200px;
-    width: 50%;
+    width: 246px;
     background-size: 1225px;
     background-image: url(./images/02-portfolio-2.jpg);
     margin-bottom: 20px;
@@ -245,12 +260,10 @@ figure {
     position: relative;
     /*min-width: 400px; */
     height: 200px;
-    width: 50%;
+    width: 246px;
     background-size: 1225px;
     background-image: url(./images/02-run-buddy.jpg);
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 933px) {
-    
-}
+@media screen and (max-width: 933px) {}
