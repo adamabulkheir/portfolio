@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 ## This is the second challenge in my boot camp
 -I was not provided any code by the camp to start on this assignment.
@@ -6,7 +6,7 @@
 -used advanced css tools to create flexboxes to style webpage futher
 
 ## Installation
--none, its a website
+-none, visit: https://adamabulkheir.github.io/portfolio/
 
 ##
 '''md
@@ -16,4 +16,4 @@
 -assisted by a conglomerate effort of my peers
 
 ## License
--
+-MIT
