@@ -191,6 +191,7 @@ aside {
 .smaller-images {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5px;
     justify-content: space-between;
     width:100%;
 }
@@ -219,49 +220,58 @@ aside {
 }
 
 .img-1 {
+    background-position-x: center;
+    background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    height: 400px;
-    background-size: 1000px;
-    background-image: url(./images/nonplaceholder/screenshot.png);
-    margin-bottom: 20px;
+    height: 600px;
+    background-size: 1100px;
+    background-image: url(./images/mock.png);
 }
 
 .img-2 {
     position: relative;
-    height: 200px;
-    width: 246px;
-    background-size: 1850px;
-    background-image: url(./images/02-portfolio-1.jpg);
-    margin-bottom: 20px;
+    background-position-x: center;
+    background-position-y: -30px;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 820px;
+    background-size: 820px;
+    background-image: url(./images/nonplaceholder/screenshot.png);
+    margin-bottom: 5px;
 }
+
 
 .img-3 {
     position: relative;
-    /*min-width: 400px; */
-    height: 200px;
-    width: 246px;
-    background-size: 1225px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 820px;
+    background-size: 835px;
     background-image: url(./images/02-portfolio-3.jpg);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .img-4 {
     position: relative;
-    /*min-width: 400px; */
-    height: 200px;
-    width: 246px;
-    background-size: 1225px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 820px;
+    background-size: 900px;
     background-image: url(./images/02-portfolio-2.jpg);
     margin-bottom: 20px;
 }
 
 .img-5 {
     position: relative;
-    /*min-width: 400px; */
-    height: 200px;
-    width: 246px;
-    background-size: 1225px;
+    background-position-x: center;
+    background-position-y:center;
+    background-repeat: no-repeat;
+    height: 270px;
+    width: 820px;
+    background-size: 835px;
     background-image: url(./images/02-run-buddy.jpg);
     margin-bottom: 20px;
 }
